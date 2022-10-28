@@ -15,9 +15,9 @@ public class StudentConfig {
 	CommandLineRunner commandLineRunner(StudentRepository studentRepository) {
 		return args -> {
 			Student mao = new Student(1L, "Mao", "thieumao@gmail.com",
-					LocalDate.of(1992, Month.JULY, 13), 30);
+					LocalDate.of(1992, Month.JULY, 13));
 			Student ha = new Student(2L, "Ha", "thu96ha@gmail.com",
-					LocalDate.of(1996, Month.NOVEMBER, 6), 26);
+					LocalDate.of(1996, Month.NOVEMBER, 6));
 			studentRepository.saveAll(List.of(mao, ha));
 		};
 	}
